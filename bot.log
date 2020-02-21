@@ -1,0 +1,10 @@
+telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Users\Makusheva\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\dispatcher.py", line 372, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Users\Makusheva\AppData\Local\Programs\Python\Python37\lib\site-packages\telegram\ext\handler.py", line 117, in handle_update
+    return self.callback(update, context)
+  File "bot.py", line 15, in greet_user
+    update.message.reply_text(text)
+AttributeError: 'CallbackContext' object has no attribute 'message'
+telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
